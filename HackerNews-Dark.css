@@ -189,6 +189,12 @@ table {
 #hnmain form input[type=submit] {
     display: none;
 }
+.reply {
+    display: none;
+}
+form { 
+    display: none;    
+}
 .itemlist tr:last-child .title {
     display: none;
 }
@@ -201,7 +207,6 @@ td.ind {
 td.votelinks {
     width: 0px;
 }
-
 .yclinks a {
     display: none;
 }
