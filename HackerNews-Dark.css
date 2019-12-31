@@ -119,9 +119,6 @@ table {
 .subtext a:visited {
     color: rgba(233, 233, 233, 0.5) !important;
 }
-.subtext a:hover {
-    display: none;
-}
 .comment-tree .default .comhead {
     font-size: 13px !important;
     color: rgba(0, 0, 0, 0.5);
