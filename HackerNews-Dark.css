@@ -1,4 +1,4 @@
-/* reset */
+/* Typography */
 body,
 td,
 table,
@@ -10,61 +10,42 @@ textarea,
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
 }
+
+table {
+    font-size: 13px;
+}
+
+/* Layout */
 body {
     background: #111;
-    margin: 20;
+    margin: 20px;
 }
+
+#hnmain {
+    width: 1600px;
+    background: transparent;
+}
+
+#hnmain table {
+    width: 100%;
+}
+
+.itemlist {
+    width: 100%;
+}
+
+/* Header and Navigation */
 .pagetop,
 .pagetop a,
 .pagetop a:visited {
     color: rgba(233, 233, 233, 0.5);
 }
+
 .brandname {
     display: none;
 }
-table {
-    font-size: 13px;
-}
-#hnmain {
-    width: 1600px;
-    background: transparent;
-}
-#hnmain > tbody > tr:last-child img {
-    display: none;
-}
-#hnmain > tbody > tr:last-child table td {
-    display: none;
-}
-#hnmain > tbody > tr > td {
-    background: transparent;
-}
-#hnmain > tbody > tr > td[bgcolor] > table {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table > tbody > tr > td {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a:after {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a img {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:nth-child(2) .pagetop {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table tbody tr td .pagetop {
-    display: none;
-}
-#hnmain > tbody > tr > td[bgcolor] > table tbody tr td .pagetop a:hover {
-    display: none;
-}
-.spacer {
-    display: none;
-}
+
+/* Story Items */
 .title,
 .sitebit,
 .subtext {
@@ -73,137 +54,93 @@ table {
     text-align: left;
     position: relative;
 }
-.itemlist {
-    width: 100%;
-}
-.votelinks a {
-    display: none;
-}
-.votearrow {
-    display: none;
-}
-.votearrow:after {
-    display: none;
-}
-.votearrow:hover:after {
-    display: none;
-}
-.athing + tr .subtext {
-    position: relative;
-}
-.athing + tr .subtext {
-    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
-    padding-bottom: 10px;
-}
+
 .athing td {
-    padding: 0px 0 0px;
+    padding: 0;
 }
+
 .athing .title:first-child {
-    padding-left: 0px;
+    padding-left: 0;
 }
+
 .athing .title a:link,
 .athing .title a:visited {
     color: #cacaca;
     font-size: 13px;
 }
-.athing .title .rank {
-    display: none;
-}
-.athing .title .comhead {
-    display: none;
-}
+
 .subtext {
-    color: rgba(242, 239, 239, .5);
+    color: rgba(242, 239, 239, 0.5);
 }
+
 .subtext a:link,
 .subtext a:visited {
     color: rgba(233, 233, 233, 0.5) !important;
 }
+
+.athing + tr .subtext {
+    position: relative;
+    border-bottom: 0 solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
+}
+
+/* Comments */
 .comment-tree .default .comhead {
     font-size: 13px !important;
     color: rgba(0, 0, 0, 0.5);
 }
+
 .comment-tree .comment {
     font-size: 13px !important;
     color: rgba(245, 245, 245, 0.5);
     line-height: 1.42em;
 }
-.c00,
-.c00 a:link {
-    color: rgba(245, 245, 245, 1);
-}
-.c5a,
-.c5a a:link,
-.c5a a:visited {
-    color: rgba(211, 211, 211, 0.9);
-}
-.c73,
-.c73 a:link,
-.c73 a:visited {
-    color: rgba(189, 189, 189, 0.8);
-}
-.c82,
-.c82 a:link,
-.c82 a:visited {
-    color: rgba(167, 167, 167, 0.7);
-}
-.c88,
-.c88 a:link,
-.c88 a:visited {
-    color: rgba(135, 135, 135, 0.6);
-}
-.c9c,
-.c9c a:link,
-.c9c a:visited {
-    color: rgba(113, 113, 113, 0.4);
-}
-.cae,
-.cae a:link,
-.cae a:visited {
-    color: rgba(91, 91, 91, 0.3);
-}
-.cbe,
-.cbe a:link,
-.cbe a:visited {
-    color: rgba(69, 69, 69, 0.2);
-}
-.cce,
-.cce a:link,
-.cce a:visited {
-    color: rgba(47, 47, 47, 0.1);
-}
-.cdd,
-.cdd a:link,
-.cdd a:visited {
-    color: rgba(25, 25, 25, 0.1);
-}
-#hnmain table {
-    width: 100%;
-}
-#hnmain form textarea {
+
+/* Comment Depth Colors */
+.c00, .c00 a:link { color: rgba(245, 245, 245, 1); }
+.c5a, .c5a a:link, .c5a a:visited { color: rgba(211, 211, 211, 0.9); }
+.c73, .c73 a:link, .c73 a:visited { color: rgba(189, 189, 189, 0.8); }
+.c82, .c82 a:link, .c82 a:visited { color: rgba(167, 167, 167, 0.7); }
+.c88, .c88 a:link, .c88 a:visited { color: rgba(135, 135, 135, 0.6); }
+.c9c, .c9c a:link, .c9c a:visited { color: rgba(113, 113, 113, 0.4); }
+.cae, .cae a:link, .cae a:visited { color: rgba(91, 91, 91, 0.3); }
+.cbe, .cbe a:link, .cbe a:visited { color: rgba(69, 69, 69, 0.2); }
+.cce, .cce a:link, .cce a:visited { color: rgba(47, 47, 47, 0.1); }
+.cdd, .cdd a:link, .cdd a:visited { color: rgba(25, 25, 25, 0.1); }
+
+/* Layout Utilities */
+td.ind { width: 0; }
+td.votelinks { width: 0; }
+
+/* Hidden Elements */
+.spacer,
+.votearrow,
+.votearrow:after,
+.votearrow:hover:after,
+.votelinks a,
+.athing .title .rank,
+.athing .title .comhead,
+form,
+.reply,
+.yclinks a,
+#hnmain form textarea,
+#hnmain form input[type=submit],
+.itemlist tr:last-child .title,
+.itemlist tr:last-child .title a,
+#hnmain > tbody > tr:last-child img,
+#hnmain > tbody > tr:last-child table td,
+#hnmain > tbody > tr > td[bgcolor] > table,
+#hnmain > tbody > tr > td[bgcolor] > table > tbody > tr > td,
+#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a,
+#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a:after,
+#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:first-child a img,
+#hnmain > tbody > tr > td[bgcolor] > table tbody tr td:nth-child(2) .pagetop,
+#hnmain > tbody > tr > td[bgcolor] > table tbody tr td .pagetop,
+#hnmain > tbody > tr > td[bgcolor] > table tbody tr td .pagetop a:hover {
     display: none;
 }
-#hnmain form input[type=submit] {
-    display: none;
-}
-.reply {
-    display: none;
-}
-form { 
-    display: none;    
-}
-.itemlist tr:last-child .title {
-    display: none;
-}
-.itemlist tr:last-child .title a {
-    display: none;
-}
-td.ind {
-    width: 0px;
-}
-td.votelinks {
-    width: 0px;
-}
-.yclinks a {
-    display: none;
+
+/* Transparent Elements */
+#hnmain > tbody > tr > td {
+    background: transparent;
 }
